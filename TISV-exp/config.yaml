@@ -1,0 +1,30 @@
+# This code is referenced:
+# https://github.com/HarryVolek/PyTorch_Speaker_Verification
+
+training: !!bool "true"
+device: "cuda:0"
+---
+data:
+  sr: 16000
+  hop_size: 160
+  window_size: 400
+  n_fft: 512
+  n_mels: 40
+---
+model:
+  proj: 512
+---
+train:
+  train_dir: 'path/to/vox_train.pickle'
+  epochs: 20000
+  sub_n: 100
+  wav_n: 2
+  num_workers: 8
+  lr: 0.001 # Learning rate
+  ckpt_interval: 50
+  ckpt_dir: './ckpt'
+  restoring: !!bool 'False'
+  restore_path: './ckpt/ckpt_'
+---
+test:
+  test_dir: 'path/to/vox_test.pickle'
