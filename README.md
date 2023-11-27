@@ -9,7 +9,10 @@ A good supervised embedding for a specific machine learning task is only sensiti
 ## ICC Regularizer implementation
 
 **ICCRegularizer.py** - PyTorch implementation for ICC regularizer. This regularizer, which is described in Section 3, focuses on balanced training data, i.e., each class has the same number of samples.
+
 **ICCRegularizer_ext.py** - PyTorch implementation for ICC regularizer extended version. This extended version of the ICC regularizer, which is presented in Appendix A, focuses on imbalanced training data, i.e., each class has a different number of samples.
+
+## Citation
 
 ```
 @article{zhang2023learning,
