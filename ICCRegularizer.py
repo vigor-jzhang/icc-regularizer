@@ -1,5 +1,9 @@
-# Author: Dr. Jianwei Zhang, Arizona State University
-# Date: 10/20/2023
+# Copyright (c) 2023 Jianwei Zhang
+#
+# E-mail: jianwei.zhang@asu.edu, me@jianwei-zhang.me, zhangjianwei-vigor@outlook.com
+#
+# All rights reserved.
+#
 # Code for NeurIPS 2023 paper "
 # J. Zhang, S. Jayasuriya, V. Berisha, "Learning Repeatable Speech Embeddings Using An Intra-class Correlation Regularizer"
 # PyTorch implementation for ICC regularizer
